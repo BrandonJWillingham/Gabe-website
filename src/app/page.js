@@ -91,10 +91,11 @@ export default function Home() {
                 <video
                   src="/Gabe-training.mp4"
                   style={{width:"100%", aspectRatio:"4/5",objectFit:"cover", borderRadius:"10px",boxShadow:"0 0 4px"}}
-                  preload="true"
+                  preload="auto"
                   loop
                   playsInline
-                  autoPlay={true}
+                  playsinline="true"
+                  autoPlay
                   muted={true}
                 /> 
                 <p className="text-2xl font-bold redText" style={{fontSize:"1.5rem",  position:"absolute",top:"30%",right:"50%",transform:"translate(50%, 50%)",width:"100%",textAlign:"center"}}>Boxing Program</p>
