@@ -1,0 +1,120 @@
+.sub_text{
+    display: flex;
+    flex-direction: column;
+      line-height: .9;
+    height: auto;
+    margin-bottom: 5%;
+    font-weight: 700;
+}
+
+.linear_gradient{
+    background-color:  #023715;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+}
+
+.CTA_subtext{
+    background-color: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+    font-size: clamp(.4rem,1vw,.8rem);
+    text-align: center;
+    margin-bottom: 8% ;
+    width: 80%;
+}
+.Contact::before {
+  content: "";
+  height: 113.2%;
+  position: absolute;
+  translate: -100px -100px;
+  transform: rotateY(10deg);
+  inset: 0;
+  background: linear-gradient(180deg, #62A537, #253F15);
+   clip-path: ellipse(50vw 50vw at 10% 20%); /* try polygon(), ellipse(), etc. */
+  z-index: -10;
+}
+.imgDiv{
+    width: 50%;
+}
+.flexContainer{
+    justify-content: space-between;
+}
+.contactForm{
+    width: 30vw;
+}
+.sub_text_mobile{
+    display: none;
+}
+.CTA_subtext_mobile{
+        background-color: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1.2;
+    font-size: clamp(.6rem,1vw,.8rem);
+    text-align: center;
+    margin-bottom: 8% ;
+    width: 80%;
+}
+
+@media (max-width:780px){
+    .sub_text, .CTA_subtext{
+        display: none;
+    }
+    .flexContainer{
+        flex-direction: column;
+    }
+    .imgDiv{
+        width: 100%;
+        height: 30%;
+    }
+    .contactForm{
+    width: 75%;
+    margin-bottom: 100px;
+    }
+    .contactParentDiv{
+        width: 100%;
+    }
+    .sub_text_mobile , .CTA_subtext_mobile{
+        display: inline;
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        align-content: center;
+        justify-content: center;
+    }
+    .CTA_subtext_mobile{
+        font-size: 1.2rem;
+        margin-top: 25%;
+    }
+    .linear_gradient_mobile{
+        font-size:clamp(1.5rem,5vw,2.5rem);
+        font-weight: 700;
+        background-color:  #023715;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 1.2;
+        width: fit-content;
+        padding-left: auto;
+        align-self: center;
+    }
+    .linear_gradient_mobile::before {
+        content: attr(data-text);
+        position: absolute;
+        z-index: -1;
+        color: rgb(255, 255, 255); /* outline color */
+        -webkit-text-fill-color: #ffffff;
+        text-shadow: 
+            -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+    }
+    .sub_text_mobile{
+        position:relative;
+        top:clamp(5%,3vw,10%)
+    }
+    .imgDiv{
+        order:-1;
+        height: 40%;
+        top:0;
+    }
+}
