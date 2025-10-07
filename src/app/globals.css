@@ -35,13 +35,15 @@ body {
 .bio::before {
   content: "";
   position: absolute;
-  translate: -50px -5.9vw;
-  transform: rotateY(10deg);
+  transform: translate(-50px, -5.9vw) rotateY(10deg);
   inset: 0;
   background: linear-gradient(180deg, #62A537, #253F15);
    clip-path: ellipse(50vw 50vw at 10% 20%); /* try polygon(), ellipse(), etc. */
   z-index: -10;
   height: 160%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 p{
   font-size: clamp(.6rem, calc(2vw + 1px), 1.5rem);
