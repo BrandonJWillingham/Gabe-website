@@ -12,18 +12,13 @@
   font-style: normal;
 }
 :root {
-  --background: #ffffff;
+  --background: #62A537;
   --foreground: #171717;
 }
 p{
   font-family: "Nalte"
 }
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+
 
 body {
   background: var(--background);
@@ -62,12 +57,12 @@ p{
   line-height: .9;
   height: auto;
    background: linear-gradient(to bottom, #22c55e, #023715);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .gradient-outline-orange{
   background: linear-gradient( #A3320B, #5a1b06);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   
 }

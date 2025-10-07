@@ -18,7 +18,7 @@ export default function Home() {
             muted={true}
           />
           <Navigation/>
-          <div className="Hero-text" style={{width:"100%",display:"flex",flexDirection:"column",height:"80vh",justifyContent:"space-around"}}>
+          <div className="Hero-text" style={{width:"100%",display:"flex",flexDirection:"column",height:"100vh",justifyContent:"space-around"}}>
             <div style={{display:"flex",flexDirection:"column", justifyContent:"center",width:"fit-content", alignContent:"center",alignItems:"center", alignSelf:"center"}}>
               <h3 className="gradient-outline text-[clamp(3rem,10vw,8rem)] font-bold"  data-text="Train">
                 Train
@@ -32,7 +32,7 @@ export default function Home() {
             </div>
             <div style={{display:"flex", justifyContent:"center",height:"40%"}}>
               
-                <h4 style={{display:"flex", justifyContent:"center",marginTop:"auto"}} className="gradient-outline-orange text-[clamp(1rem,6vw,2.2rem)] font-bold" data-text="Reserve your training">
+                <h4 style={{display:"flex", justifyContent:"center",marginTop:"15vh"}} className="gradient-outline-orange text-[clamp(1rem,6vw,2.2rem)] font-bold" data-text="Reserve your training">
                   <a href="/Contact">
                   Reserve your training
                   </a>
