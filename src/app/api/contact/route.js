@@ -15,8 +15,8 @@ export async function POST(req){
     })
     const info = await transporter.sendMail({
         from: "Gabe site <josiahbwill@gmail.com>",
-        to: "Brandonjwillingham@gmail.com",
-        subject:"Called from Gabe's website",
+        to: "gabrielpj31@gmail.com",
+        subject:`${payload.name} is looking for a consultation`,
         text: `Hi, my name is ${payload.Name} and I am looking to achieve ${payload.Goal} with ${payload.Package}. \n you can contact me at ${payload.Email}, ${payload.Phone}`,
         replyTo: payload.Email,
     })
